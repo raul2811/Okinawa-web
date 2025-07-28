@@ -4,10 +4,11 @@
     "dockerfile": "../Dockerfile",
     "context": ".."
   },
-  "postCreateCommand": "echo 'Codespace creado y listo!'",
-  "forwardPorts": [3000],
+  "postCreateCommand": "cd app/web && reflex run",
+  "forwardPorts": [3000, 8000],
   "settings": {
     "terminal.integrated.defaultProfile.linux": "fish"
   },
   "remoteUser": "root"
 }
+

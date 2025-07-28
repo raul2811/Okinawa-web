@@ -1,0 +1,18 @@
+@font-face {
+    font-family: my-font;
+    src: url("/fonts/Artis-Swing-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: my-font2;
+    src: url("/fonts/Artis-Sans-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: my-font3;
+    src: url("/fonts/Artis-Sans-Demibold.otf") format("opentype");
+}
+@font-face {
+    font-family: my-font4;
+    src: url("/fonts/Artis-Sans-Light.otf") format("opentype");
+}
+
+

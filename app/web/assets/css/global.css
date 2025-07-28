@@ -1,0 +1,10 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding: var(--scroll-padding, 5rem);
+}
+html::-webkit-scrollbar {/*elimana la barra de scrooll de opera ,chrome*/
+    display: none;
+}
+html{-ms-overflow-style:none;  /*elimana la barra de scrooll de IE and Edge */
+scrollbar-width: none;  /* elimana la barra de scrooll de Firefox */
+}

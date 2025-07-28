@@ -1,0 +1,96 @@
+.pagina-admin {
+    display: flex;
+}
+
+
+.barra-izquierda {
+    display: flex;
+    flex-direction: column;
+    background-color: #CB3233;
+    width: 20%;
+    height: 97vh;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.titulo-columna {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10%;
+    color: white;
+    font-family: my-font;
+    font-size: 25px;
+}
+.opcion {
+    padding-left: 30px;
+    color: white !important;
+    font-family: my-font3;
+    font-size: 20px;
+}
+
+.busqueda-form {
+    margin-top: 11px;
+    margin-left: 5px;
+    width: 50%;
+}
+
+.saludo-derecho {
+    padding-top: 13px;
+    padding-left: 75px;
+    color:  #CB3233;
+    font-family: my-font3;
+    font-size: 18px;
+}
+
+.usuarios-box {
+    position: absolute; 
+    border-radius: 10px;
+    width: 50%;
+    height: 20%;
+    top: 70px; 
+    left: 21.5%;
+    background: linear-gradient(to bottom, #ed7c7d, #e15253, #cb3233);
+}
+
+.usuarios-titulo{
+    padding-top: 20px;
+    padding-left: 20px;
+    color: white;
+    font-family: my-font3;
+    font-size: 20px;
+}
+
+.usuarios-boton{
+    margin-left: 20px !important;
+}
+
+.fotos-box {
+    position: absolute; 
+    border-radius: 10px;
+    width: 50%;
+    height: 20%;
+    top: 30%; 
+    left: 21.5%;
+    background: linear-gradient(to bottom, #ed7c7d, #e15253, #cb3233);
+}
+
+.fotos-titulo{
+    padding-top: 20px;
+    padding-left: 20px;
+    color: white;
+    font-family: my-font3;
+    font-size: 20px;
+}
+
+.fotos-boton{
+    margin-left: 20px !important;
+}
+
+
+
+
+
+
+
+

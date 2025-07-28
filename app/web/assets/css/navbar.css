@@ -1,0 +1,34 @@
+.navbar{
+position:sticky;
+padding-bottom:2%;
+width:100%;
+top:0;
+z-index:5;
+box-shadow:0px 1.3vw 0px 0px rgb(142, 35, 36)
+}
+
+.menu-item {
+    color: white;
+    display: block;
+    margin-bottom: 20px;
+    font-family: my-font4;
+    text-align: left;
+    font-size: 6vw;
+    border-bottom: 1px solid white;
+}
+
+.menu-container{
+   width: 80%;  
+   padding-left: 5%;
+   padding-top: 5%;
+}
+
+#dropdownMenu {
+    display: none;
+    background-color: #CB3233;
+    height: 50vh;
+    width: 100vw;
+    position: fixed;
+    place-items: start start;
+    box-shadow:0px 1.3vw 0px 0px rgb(142, 35, 36)
+}

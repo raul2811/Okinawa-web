@@ -1,0 +1,7 @@
+pip
+reflex
+bcrypt
+sqlalchemy
+psycopg2
+pyjwt
+reflex==0.8.3

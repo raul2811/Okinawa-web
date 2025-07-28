@@ -1,0 +1,598 @@
+/*esta es la base de todo es el fondo*/
+.Section_1 {
+  background-color: #F6EFE0;
+  background-size: cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1em;
+  padding: 1em;
+}
+
+
+@media (min-width: 1024px) {
+  .Section_1 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .Section_1 {
+    grid-template-columns: 1fr; 
+  }
+}
+
+/*esta parte es la animacion del dianismo de la pagina web*/
+.slide-in {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.slide-in.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+/*esta es la parte inicial sus modificaciones solo afectaran el primer text-box y sus adecuaciones*/
+/*si ven una (p) es para los elementos especificos, si ven una (img) es para las imagenes especificas*/
+
+.text-box-inicial {
+  text-align: center;
+  font-family: my-font2;
+  font-size: 36px;
+  color: #CB3233; 
+  padding: 30px;
+}
+
+.text-box-inicial img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(2px 10px 10px rgba(0, 0, 0, 0.8));
+}
+
+.text-box-inicial p {
+  border-bottom: 2px solid #FE1312;
+  padding-bottom: 10px; 
+}
+
+.parrafo {
+  font-family: Asap;
+  color: #370202;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-left: 20px;  
+  margin-right: 20px; 
+} 
+
+.parrafo p {
+  margin-bottom: 20px;  
+}
+
+.boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: wheat;
+  font-family: Asap;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+/*esta parte es para las imagenes que sigues luego del text-box-inicial*/
+
+.image-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.modo-zoom {
+  transform: translate(-50%, -50%) scale(0.75);
+  transition: transform .2s;
+  max-width: 100%; /* Limita el ancho de la imagen al ancho de su contenedor */
+  object-fit: contain;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+/*esta parte es para el text-box-intermedio que va luego de las primeras imagenes*/
+/*en esta parte se presenta el elemento (button) es necesario si desean interactuar directamente con el boton*/
+
+.text-box-intermedio{
+  text-align: center;
+  font-family: my-font3;
+  font-size: 35px;
+  color: #CB3233;
+  padding: 30px;
+}
+
+.text-box-intermedio img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(2px 10px 10px rgba(0, 0, 0, 0.8));
+}
+
+.text-box-intermedio p {
+  border-bottom: 2px solid #FE1312;
+  padding-bottom: 10px; 
+}
+
+
+.text-box-imagen-intermedio {
+  background-color: white;
+  color:#CB3233;
+  font-family: Asap;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.parrafo-box-imagen-intermedio{
+  background-color: white;
+  color:#370202;
+  font-family: Asap;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+button.boton-box-imagen-intermedio {
+  font-size: 10px; 
+  background-color: #D9D9D9;
+  color: #00000080;
+  text-align: center;
+  display: block;
+  font-family: Asap;
+  padding: 0 50px;
+}
+
+.boton-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-box-intermedio {
+  background-color: white;
+  padding-bottom: 10px;
+}
+
+/*esta parte es del equipo de trabajo tanto su text-box como imagen-box*/
+
+.equipo-trabajo {
+  text-align: center;
+  font-family: my-font3;
+  font-size: 35px;
+  color: #CB3233;
+  padding: 30px;
+}
+
+.equipo-trabajo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(2px 10px 10px rgba(0, 0, 0, 0.8));
+}
+
+.equipo-trabajo p {
+  border-bottom: 2px solid #FE1312;
+  padding-bottom: 10px; 
+}
+
+/*parte exclusiva de la imagenes y su animacion*/
+.text-equipo{
+  background-color: white;
+  color:#CB3233;
+  font-family: Asap;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  max-width: 300px; 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.parrafo-equipo{
+  background-color: white;
+  color:#370202;
+  font-family: Asap;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 300px; 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  overflow: hidden;
+  flex-direction: column;
+  white-space: normal;
+  padding-bottom: 20px;
+}
+
+.equipo-trabajo-images-container {
+  overflow-x: scroll;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.image-box-equipo-trabajo {
+  display: inline-block;
+  max-width: 300px; 
+  margin-right: 20px; 
+}
+
+.image-box-equipo-trabajo img {
+  width: 100%;
+  height: auto;
+}
+
+/*apartado de redes sociales*/
+.redes-sociales-text{
+  text-align: center;
+  font-family: my-font3;
+  font-size: 35px;
+  color: #CB3233;
+  padding: 30px;
+}
+
+.redes-sociales-text img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(2px 10px 10px rgba(0, 0, 0, 0.8));
+}
+
+.redes-sociales-text p {
+  border-bottom: 2px solid #FE1312;
+  padding-bottom: 10px; 
+}
+
+.parrafo-redes-sociales{
+  font-family: Asap;
+  color: #370202;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-left: 20px;  
+  margin-right: 20px; 
+  padding-bottom: 35px;
+}
+
+/*en este apartado todo es necesario*/
+/*como el modulo mobile establece margenes para todos los mobiles hay que aplicar (100vw) para que se ajuste a la pantalla*/
+/*100vw se define como el ancho del navegador independimente del dispositivo, las medidas (%) y (px) solo se ajustan hasta el contenedor*/
+/*los left y right (al igual que sus margenes) la caja*/
+/*si se llegan a quitar solo harias que la caja (box) se desborde de manera fatal*/
+
+.divisor {
+  max-width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10% 2%;
+  background: #6E593C;
+  max-width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.social-icons a img {
+  width: 1em;
+  padding-top: 7.5px;
+  align-self: center;
+  filter: drop-shadow(2px 10px 10px rgba(0, 0, 0, 0.8));
+}
+
+/*apartado del formulario*/
+.formulario-text{
+  text-align: center;
+  font-family: Asap Condensed;
+  font-size: 30px;
+  color: #CB3233;
+  padding: 30px;
+}
+
+/* Estiliza el botón de envío */
+button[type="submit"] {
+    background-color: #D9D9D9;
+    color: #5B5B5B;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    align-items: center;
+    display: flex;
+    filter: drop-shadow(2px 10px 10px rgba(0, 0, 0, 0.8));
+    margin-bottom: 40px;
+}
+
+.form3{
+  height: 20em;
+}
+
+.input-box {
+  margin-left: 10%;
+  margin-bottom: 20px; 
+  width: 80%;
+  font-family: Asap;
+  filter: drop-shadow(2px 10px 10px rgba(0, 0, 0, 0.8));
+}
+
+
+/*apartado de pc*/
+.contenedor-ta {
+  width: 100%;  
+  margin: auto;
+}
+
+.text-box-inicial-ta {
+  text-align: center;
+  font-family: my-font3;
+  font-size: 50px;
+  color: #CB3233; 
+  padding: 30px;
+  width: 100%;  
+}
+
+.text-box-inicial-ta img {
+  display: block;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(2px 10px 10px rgba(0, 0, 0, 0.8));
+}
+
+.segundo-text {
+  border-bottom: 2px solid #FE1312;
+  border-bottom-width: 1px; 
+  width: 80%; 
+  padding-bottom: 10px; 
+  display: inline-block; 
+}
+
+.contenedor-parrafo-boton {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+  margin: auto; 
+  gap: 40px;
+}
+
+.parrafo-ta {
+  font-family: Asap;
+  color: #370202;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+  width: 50%;   
+  padding-top: 40px;
+} 
+
+.parrafo-ta p {
+  margin-bottom: 20px;  
+}
+
+.boton-ta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: wheat;
+  font-family: Asap;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+.text-box-intermedio-ta {
+  text-align: center;
+  font-family: my-font3;
+  font-size: 50px;
+  color: #CB3233;
+  padding: 30px;
+}
+
+.text-box-intermedio-ta img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(2px 10px 10px rgba(0, 0, 0, 0.8));
+}
+
+/*nuestros servicios en tablet*/
+.text-box-imagen-intermedio-ta {
+  background-color: white;
+  color:#CB3233;
+  font-family: Asap;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  max-width: 300px; 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  flex: 1; 
+}
+
+.parrafo-box-imagen-intermedio-ta {
+  background-color: white;
+  color:#370202;
+  font-family: Asap;
+  font-size: 17px;
+  text-align: center;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  max-width: 300px; 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  flex-direction: column;
+  white-space: normal;
+  padding-bottom: 20px;
+  flex: 1; 
+}
+
+button.boton-box-imagen-intermedio-ta {
+  font-size: 10px; 
+  background-color: #D9D9D9;
+  color: #00000080;
+  text-align: center;
+  display: block;
+  font-family: Asap;
+  padding: 0 50px;
+  margin: auto; 
+}
+
+.boton-contenedor-ta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto; 
+}
+
+.image-box-intermedio-ta {
+  display: flex; 
+  flex-direction: column; 
+  background-color: white;
+  padding-bottom: 10px;
+  margin: 7px; 
+}
+
+.image-box-intermedio-ta img {
+  max-width: 300px; 
+  height: auto;
+}
+
+.intermedio-images-container-ta {
+  display: flex;
+  align-items: stretch; 
+}
+
+/*la pequeña introduccion al equipo de trabajo en tablet*/
+.equipo-trabajo-ta {
+  text-align: center;
+  font-family: my-font3;
+  font-size: 50px;
+  color: #CB3233;
+  padding: 30px;
+  position: relative; 
+  display: inline-block; 
+}
+
+.equipo-trabajo-ta::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 75%; 
+  background-color: #FE1312; 
+}
+
+.equipo-trabajo-ta img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(2px 10px 10px rgba(0, 0, 0, 0.8));
+}
+
+
+/*Esta en la parte del equipo de trabajo exclusivo de tablet*/
+.text-equipo-ta{
+  background-color: white;
+  color:#CB3233;
+  font-family: Asap;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  max-width: 300px; 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.parrafo-equipo-ta{
+  background-color: white;
+  color:#370202;
+  font-family: Asap;
+  font-size: 17px;
+  text-align: center;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 300px; 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  flex-direction: column;
+  white-space: normal;
+  padding-bottom: 20px;
+}
+
+.equipo-trabajo-images-container-ta {
+  display: flex; 
+  align-items: stretch;
+  scroll-behavior: smooth;
+}
+
+.image-box-equipo-trabajo-ta {
+  display: inline-block;
+  margin: 7px; 
+}
+
+.image-box-equipo-trabajo-ta img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
