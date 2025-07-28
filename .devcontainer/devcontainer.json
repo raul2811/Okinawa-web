@@ -1,0 +1,13 @@
+{
+  "name": "Reflex Dev Environment",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "postCreateCommand": "echo 'Codespace creado y listo!'",
+  "forwardPorts": [3000],
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "fish"
+  },
+  "remoteUser": "root"
+}
