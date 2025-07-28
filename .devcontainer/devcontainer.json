@@ -4,11 +4,17 @@
     "dockerfile": "../Dockerfile",
     "context": ".."
   },
-  "postCreateCommand": "cd app/web && reflex run",
+  "postCreateCommand": "cd /app/web && ( [ -f rxconfig.py ] || reflex init --no-install ) && chmod -R u+rw .web && reflex run --backend-host 0.0.0.0",
   "forwardPorts": [3000, 8000],
   "settings": {
-    "terminal.integrated.defaultProfile.linux": "fish"
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "python.pythonPath": "/home/devuser/venv/bin/python",
+    "python.linting.enabled": true
   },
-  "remoteUser": "root"
+  "extensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "prisma.prisma"
+  ],
+  "remoteUser": "devuser"
 }
-
