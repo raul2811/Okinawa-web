@@ -30,8 +30,9 @@ RUN adduser -D devuser && \
 
 # Instalar Bun como devuser
 USER devuser
-RUN curl -fsSL https://bun.sh/install | bash
+RUN curl -fsSL https://bun.sh/install | bash 
 ENV PATH="/home/devuser/.bun/bin:${PATH}"
+# este es un comentario de prueba
 
 # Configurar entorno virtual Python
 RUN python3 -m venv /home/devuser/venv
